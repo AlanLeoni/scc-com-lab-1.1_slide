@@ -1,0 +1,18 @@
+# Ignore reveal.js dependencies installed via npm
+node_modules/
+
+# Ignore editor and IDE specific files
+.vscode/
+
+# Ignore package-lock.json for npm 5+ (prevents dependency locking)
+package-lock.json
+
+# Ignore yarn.lock file for yarn (prevents dependency locking)
+yarn.lock
+
+# Ignore any log files
+log/*.log
+
+.sass-cache
+.DS_Store
+tmp/**
