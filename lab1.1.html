@@ -4,101 +4,33 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>SCC1-U1-accoglienza digitale</title>
+		<title>Unità 1.1 - Accoglienza digitale</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/white-red.css">
-
+		
+		<!-- Tutte le mie customizzazioni -->
+		<link rel="stylesheet" href="custom_alan.css">
+		
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-		<style>
-			/* CSS inline per il logo in alto a sinistra */
-			.slide {
-				position: relative;
-			}
-	   
-			.header {
-				position: relative;
-			 }
-	
-			.strip {
-				   height: 15px;
-				   margin-top: 45px;
-				   width: 100%;
-				   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(236,28,36,1) 100%);
-				   position: absolute; 
-				   opacity: 1;
-				   z-index: 0;
-			}
-	  
-			.strip img {
-				position: absolute;
-				top: -40px;
-				left: 10px;
-				height: 75px;
-				object-fit: cover; 
-				z-index: 1; 
-			  }
-	
-			@media (max-height: 768px) {
-				.smartphone {
-					  display: none;
-			}
-			  }
-			
-			/* Customizzazioni del tema*/
-			/* Sovrascrivo margin-top per evitare sovrapposizione con header */
-			.present{
-				margin-top: 10px;
-			  }
-	
-			.title{
-				background-color: #ec1c24; 
-				padding:25px; 
-				border-radius: 25px; 
-				box-shadow: 10px 5px 5px gray;
-				color: white;
-			}
-	
-			.author{
-				font-weight: bold;
-			}
-	
-			.section{
-				border: #ec1c24 solid 3px; 
-				padding:25px; 
-				border-radius: 25px; 
-				box-shadow: 10px 5px 5px gray;
-			}
-	
-			.subsection{
-				border: #ec1c24 solid 2px; 
-				padding:25px; 
-				border-radius: 25px; 
-				box-shadow: 10px 5px 5px gray;
-			}
-	
-			.reveal ul{
-				list-style-type: square;
-			  }
-			</style>	
+		
 	
 	</head>
 	<body>
 		<div class="header smartphone">
+			<img class="image" src="img/scc.png" alt="Immagine sovrapposta">
 			<div class="strip">
-				<img src="img/scc.png" alt="Immagine sovrapposta">
 			</div>
 		</div>
-
 		<div class="reveal">
 			<div class="slides">
 				<section id="copertina">
-					<h2 class="title" style="color: white;">Unità 1 - Accoglienza digitale</h2>	
+					<h2 class="title" style="color: white;">Unità 1.1 <br>Accoglienza digitale</h2>
 					<p class="author">Gruppo di materia Comunicazione</p>
-					<p>Scuola cantonale di commercio <br/>
-					Classe prima</p>
+					<p>Scuola cantonale di commercio</p>
+					<p>Classe prima - laboratorio</p>
 				</section>
 				
 				<section>
@@ -108,10 +40,10 @@
 					<section>
 						<h2>Servizi offerti</h2>
 						<ul>
-							<li>Accesso pc e rete scolastica (wifi e cablata)</li>
-							<li>Dischi di rete (in locale nella rete ICEC e in remoto)</li>
-							<li>Posta elettronica</li>
-							<li>Monitor</li>
+							<li class="fragment">Accesso pc e rete scolastica (wifi e cablata)</li>
+							<li class="fragment">Dischi di rete (in locale nella rete ICEC e in remoto)</li>
+							<li class="fragment">Posta elettronica</li>
+							<li class="fragment">Monitor</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -120,11 +52,11 @@
 								<li>Alla fine o durante la presentazione verranno forniti gli accessi per tutti i servizi utili</li>
 
 						</aside>
-					</section>
+					</section> 
 
-					<section>
-						<h2>Accesso pc e rete scolastica</h2>
-						<ul>
+					<section >
+						<h2>Accesso pc e rete  scolastica</h2>
+						<ul class="fragment">
 							<li>Accesso a tutti i computer presenti nell'istituto scolastico</li>
 							<li>Accesso alla rete wifi (WIFI-ICEC) con i propri dispositivi personali (smartphone, tablet o laptop)</li>
 						</ul>
@@ -139,14 +71,14 @@
 
 					<section>
 						<h2>Accesso dischi di rete</h2>
-						<p>I dischi di rete sono degli spazi (personali o condivisi tra più utenti) accessibili da qualsiasi postazione. Sono gli spazi da privilegiare quando si salva un file sui pc di scuola.</p>
-						<ul>
-							<li>Spazio personale: accessibile solo all'utente</li>
-							<li>Spazi condivisi: accessibili a più utenti (esempio: accesso al gruppo classe</li>
+						<p class="fragment">I dischi di rete sono degli spazi (personali o condivisi tra più utenti) accessibili da qualsiasi postazione. 
+							Sono gli spazi da privilegiare quando si salva un file sui pc di scuola</p>
+						<ul class="fragment">
+							<li><span style="font-weight: bold;">Spazio personale</span>: accessibile solo all'utente</li>
+							<li><span style="font-weight: bold;">Spazi condivisi</span>: accessibili a più utenti <br>(esempio: accesso al gruppo classe)</li>
 						</ul>
 						<aside class="notes">
 							<ul>
-								<li>Mostrare a video come si accede a questi spazi evidenziando le caratteristiche</li>
 								<li>Enfatizzare il fatto che il desktop non è uno spazio da considerare per il salvataggio dei file</li>
 								<li>Iniziare a sottolineare che è responsabilità dell'allievo sapere cosa si salva e dove</li>
 							</ul>
@@ -157,8 +89,8 @@
 						<h2>Accesso dischi di rete 
 							<br/>
 							<span style="font-style: italic;">da remoto</span></h2>
-						<p>Questi spazi sono accessibili pure al di fuori della rete ICEC (ad esempio da casa) attraerso il seguente link: <a href="https://remote.icec.ti-edu.ch" target="_blank">https://remote.icec.ti-edu.ch</a></p>
-						<img class="r-stretch" data-src="img/icec.png" alt="">
+						<p class="fragment">Questi spazi sono accessibili pure al di fuori della rete ICEC (ad esempio da casa) attraverso il seguente link: <a href="https://remote.icec.ti-edu.ch" target="_blank">https://remote.icec.ti-edu.ch</a></p>
+						<img class="r-stretch fragment" data-src="img/lab1.1/icec.png" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Ribadire che l'accesso è possibile solo con le credenziali ICEC (nome utente e password utilizzati per accedere ai pc di sede)</li>
@@ -170,8 +102,8 @@
 
 					<section>
 						<h2>Posta elettronica</h2>
-						<p>Ogni allievo SCC ha un account di posta elettronica</p>
-						<ul>
+						<p class="fragment">Ogni allievo SCC ha un account di posta elettronica</p>
+						<ul class="fragment">
 							<li>L'email scolastico è l'unico indirizzo che viene accettato per le comunicazioni con docenti, direzione e servizi amministrativi</li>
 							<li>La posta elettronica è da consultare regolarmente</li>
  							<li>Indirizzo studenti: <span style="font-style:italic">nome.cognome@sccbellinzona.ch</span></li>
@@ -187,9 +119,9 @@
 					</section>
 
 					<section>
-						<h2>Accesso posta elettronica</h2>
+						<h2 style="margin-top: 15px;">Accesso posta elettronica</h2>
 						<p>Link di accesso: <a href="https://webmail.icec.ti-edu.ch" target="_blank">https://webmail.icec.ti-edu.ch</a></p>
-						<img class="r-stretch" data-src="img/webmail.png" alt="">
+						<img class="r-stretch" data-src="img/lab1.1/webmail.png" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Accennare alla possibilità di configuare il proprio account su un client</li>
@@ -200,7 +132,8 @@
 
 					<section>
 						<h2>Accesso a Monitor</h2>
-						<img class="r-stretch" data-src="img/monitor.png" alt="">
+						<p>Link di accesso <a href="https://monitor.education" target="_blank" rel="noopener noreferrer">https://monitor.education</a></p>
+						<img class="r-stretch" data-src="img/lab1.1/monitor.png" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Mostrare le informazioni presenti: assenze docenti, orari classi... (usare un account "studente" per mostrare cosa vedono loro)</li>
@@ -210,7 +143,7 @@
 
 					<section>
 						<h2>Gestione account</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Nome utente: <span style="font-style:italic">nome.cognome</span></li>
 							<li>Password: <span style="font-style:italic">password_personale</span></li>
 						</ul>
@@ -224,7 +157,7 @@
 					<section>
 						<h2>Gestione account - cambio password</h2>
 						<p> Password di accesso ai vari servizi ICEC (accesso pc, posta elettronica, Monitor):</p>
-						<video data-src="img/pwd.mp4" controls muted loop class="r-stretch"></video>
+						<img data-src="img/lab1.1/monitor_account.jpg" class="r-stretch"></img>
 						<aside class="notes">
 							<ul>
 								<li>Mostrare come si fa il cambio password</li>
@@ -235,8 +168,8 @@
 
 					<section>
 						<h2>Contatti per servizi ICEC</h2>
-						<p>I servizi ICEC sono gestiti dal Centro informatica ICEC. In caso di problemi (es. problemi ci accesso o disservizi):</p>
-						<ul>
+						<p class="fragment">I servizi ICEC sono gestiti dal Centro informatica ICEC. In caso di problemi (es. problemi ci accesso o disservizi):</p>
+						<ul class="fragment">
 							<li>Centro informatica: terzo piano, stabile principale</li>
 							<li>Utilizzare "Segnalazione di un problema" in monitor (icona megafono in alto a destra)</li>
 						</ul>
@@ -255,12 +188,11 @@
 					</section>
 
 					<section>
-						<h2>Piattaforma moodle/scc</h2>
-						<ul>
+						<h2 style="margin-top: 15px;">Piattaforma moodle/scc</h2>
+						<ul class="fragment">
 							<li>La piattaforma didattica digitale <span style="font-weight: bold;">moodle/SCC</span> è a disposizione dei docenti e degli allievi della SCC</li>
 							<li>Il software <span style="font-weight: bold;">Moodle</span> è una piattaforma di Learning Management System utilizzata da moltissime istituzioni in Svizzera e nel mondo</li>
 						</ul>
-						<img class="r-stretch" data-src="img/moodle.png" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Far presente che rispetto alle scuole medie, nelle SMS viene utilizzata molto e la stragrande maggioranza dei docenti usa questa piattaforma per il materiale didattico utilizzato in classe</li>
@@ -270,7 +202,7 @@
 
 					<section>
 						<h2>Contenuti e attività (alcuni)</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Condivisione materiale didattico</li>
 							<li>Link  e collegamenti a fonti e ricerche</li>
 							<li>Annunci e avvisi</li>
@@ -282,7 +214,7 @@
 
 					<section>
 						<h2>Organizzazione corsi</h2>
-						<div class="r-hstack">
+						<div class="r-hstack fragment">
 						<ul>
 							<li>Anno scolastico di riferimento</li>
 							<li>Sigla del docente che gestisce il corso</li>
@@ -290,7 +222,7 @@
 							<li>Classe ed eventualmente sezione</li>
 						</ul>
 						
-						<img class="r-stretch" data-src="img/moodle_scc.jpg" alt="" style="width: 30%;">
+						<img class="r-stretch" data-src="img/lab1.1/moodle_scc.jpg" alt="" style="width: 30%;">
 						</div>
 						<aside class="notes">
 							<ul>
@@ -300,11 +232,11 @@
 					</section>
 
 					<section>
-						<h2>Corsi ai quali si è iscritti</h2>
+						<h2 style="margin-top: 15px;">Corsi ai quali si è iscritti</h2>
 						<p>Dopo aver effettuato l'accesso tramite <span style="font-style: italic;">nome utente</span> e <span style="font-style: italic;">password</span> ogni
 							utente viene indirizzato in una pagina nella quale sono elencati i corsi ai
 							quali è iscritto</p>
-						<img class="r-stretch" data-src="img/moodle_corsi.jpg" alt="">
+						<img class="r-stretch" data-src="img/lab1.1/moodle_corsi.jpg" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Mostrare la struttura e mostrare dove possono trovare i corsi ai quali sono iscritti (o nella dashboard oppure sotto "i miei corsi")</li>
@@ -314,9 +246,9 @@
 					</section>
 
 					<section>
-						<h2>Accesso alla piattaforma</h2>
+						<h2 style="margin-top: 15px;">Accesso alla piattaforma</h2>
 						<p><a href="https://moodle.edu.ti.ch/scc/login/index.php" target="_blank">https://moodle.edu.ti.ch/scc/login/index.php</a></p>
-						<img class="r-stretch" data-src="img/moodle_login.jpg" alt="">
+						<img class="r-stretch" data-src="img/lab1.1/moodle_login.jpg" alt="">
 						<aside class="notes">
 							<ul>
 								<li>Far presente che ci si arriva pure dal sito della scuola attraverso la sezione link</li>
@@ -326,9 +258,11 @@
 
 					<section>
 						<h2>Primo accesso alla piattaforma</h2>
-						<p>Utilizzare la procedura di "recupera password"</p>
-						<img class="r-stretch" data-src="img/moodle_login.jpg" alt="">
-						<p>Nel compo Indirizzo email utilizzare <span style="font-style: italic;">username</span>@sccbellinzona.ch</p> e seguire le istruzioni presenti nel messaggio di posta elettronica che sarà inviato
+						<ul>
+							<li class="fragment">Utilizzare la procedura di "recupera password"</li>
+							<li class="fragment">Nel campo Indirizzo email utilizzare <span style="font-style: italic;">username</span>@sccbellinzona.ch</li>
+							<li class="fragment">Seguire le istruzioni presenti nel messaggio di posta elettronica che sarà inviato</li>
+						</ul>
 						<aside class="notes">
 							<ul>
 								<li>Mostrare come si fa il recupera password</li>
@@ -360,8 +294,8 @@
 
 					<section>
 						<h2>NetworkID</h2>
-						<p>Il <span style="font-style: italic;">networkID</span> è un account che permette l'accesso a diversi servizi offerti dal cantone tramite il <a href="https://www4.ti.ch/decs/ds/cerdd/cerdd/" target="_blank">CERDD</a>. In particolare il <span style="font-style: italic;">networkID</span> permette di:</p>
-						<ul>
+						<p class="fragment">Il <span style="font-style: italic;">networkID</span> è un account che permette l'accesso a diversi servizi offerti dal Cantone tramite il <a href="https://www4.ti.ch/decs/ds/cerdd/cerdd/" target="_blank">CERDD</a>. In particolare il <span style="font-style: italic;">networkID</span> permette di:</p>
+						<ul class="fragment">
 							<li>Accedere alla piattaforma <a href="https://www.office.com/" target="_blank" rel="noopener noreferrer">Microsoft 365</a> </li>
 							<li>Scaricare il pacchetto Office</li>
 						</ul>
@@ -373,20 +307,19 @@
 					</section>
 
 					<section>
-						<h2>Accesso a Microsoft 365</h2>
+						<h2 style="margin-top: 15px;">Accesso a Microsoft 365</h2>
 						<p>Accedere all'indirizzo <a href="https://office.com" target="_blank" rel="noopener noreferrer">https://office.com</a>, cliccare su accedi (sign in) ed inserire il proprio networkID</p>
-						<img class="r-stretch" data-src="img/networkid.jpg" alt="">
+						<img class="r-stretch" data-src="img/lab1.1/networkid.jpg" alt="">
 					</section>
 
 					<section>
 						<h2>Ottenimento networkID</h2>
-						<p>Ogni studente che frequenta una scuola pubblica del Cantone Ticino è già in possesso del proprio networkID.</p>
+						<p class="fragment">Ogni studente che frequenta una scuola pubblica del Cantone Ticino è già in possesso del proprio networkID</p>
 						<aside class="notes">
 							<ul>
 								<li>Far presente che tutti dovrebbero già avere il loro networkID (sono le credenziali che alle scuole medie utilizzavano per accedere a Microsoft 365 e a Moodle)</li>
 							</ul>
 						</aside>
-
 					</section>
 
 					<section>
@@ -397,11 +330,6 @@
 							<li>Compilare il <a href="https://www4.ti.ch/decs/ds/cerdd/informatica/service-desk/form-problemi-
 								tecnici/" target="_blank" rel="noopener noreferrer">modulo</a> per problemi tecnici</li>
 						</ul>
-						<p>Richiesta codice di attivazione (in caso di password dimenticata) o di primo accesso:</p>
-						<ul>
-							<li>Rivolgersi al proprio docente di comunicazione</li>
-							<li>Oppure scrivere a <a href="mailto:decs-scc.bellinziona@edu.ti.ch">decs-scc.bellinziona@edu.ti.ch</a></li>
-						</ul>
 						<aside class="notes">
 							<ul>
 								<li>Fare verifica a tappeto ed eventualmente generare i codici di accesso. </li>
@@ -410,7 +338,16 @@
 								<li>Ricordare inoltre che quella che trovano scritto non è la loro pwd di accesso ma serve per generarla (guida da seguire su <a href="https://servizi.edu.ti.ch" target="_blank" rel="noopener noreferrer">servizi.edu.ti.ch</a>)</li>
 							</ul>
 						</aside>
+						</section>
 
+						<section>
+							<h2>Codice di attivazione NetworkID</h2>
+							<p>Richiesta codice di attivazione (in caso di password dimenticata) o di primo accesso:</p>
+							<ul>
+								<li>Rivolgersi al proprio docente di comunicazione</li>
+								<li>Oppure scrivere a <a href="mailto:decs-scc.bellinziona@edu.ti.ch">decs-scc.bellinziona@edu.ti.ch</a></li>
+							</ul>
+						</section>
 					</section>
 				</section>
 
@@ -421,7 +358,7 @@
 
 					<section>
 						<h2>Badge personale</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Stampe e Fotocopie
 							<ul>
 								<li>0.05 CHF 1 pagina bn A4 <br>
@@ -440,8 +377,8 @@
 
 					<section>
 						<h2> Badge personale</h2>
-						In caso di smarrimento/rottura:
-						<ul>
+						<p>In caso di smarrimento/rottura:</p>
+						<ul class="fragment">
 							<li>Richiesta di ristampa allo sportello</li>
 							<li>Costo di 10 CHF (pagamento da effettuare allo sportello</li>
 							<li>Ritiro allo sportello</li>
@@ -450,16 +387,17 @@
 
 					<section>
 						<h2>Altri utilizzi badge</h2>
-						<p>Il badge personale funge anche come carta <a href="https://www4.ti.ch/decs/sa/carta-studente" target="_blank">IOSTUDIO</a></p>
+						<p class="fragment">Il badge personale funge anche come carta <a href="https://www4.ti.ch/decs/sa/carta-studente" target="_blank">IOSTUDIO</a></p>
 					</section>
 
 					<section>
 						<h2>IOSTUDIO</h2>
-					
+					<div class="fragment">
 					<p>Il possesso della carta IOSTUDIO dà diritto a tutta una serie di sconti
 						negli ambiti della mobilità, della cultura, dell'intrattenimento, dei
 						viaggi, della salute e del benessere.</p>
 					<p><a href="https://www4.ti.ch/decs/sa/carta-studente/home/" target="_blank" rel="noopener noreferrer">https://www4.ti.ch/decs/sa/carta-studente/home/</a></p>
+					</div>
 					</section>
 					<aside class="notes">
 						<ul>
@@ -481,59 +419,74 @@
 
 					<section>
 						<h2>ICEC-AD (Active Directory)</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Accesso pc e rete scolastica (wifi e cablata)</li>
 							<li>Dischi di rete (in locale nella rete ICEC e in remoto)</li>
 							<li>Posta elettronica</li>
 							<li>Monitor</li>
 						</ul>
-						<p>Centro informatica ICEC</p>
+						<p class="fragment">Centro informatica ICEC</p>
 					</section>
 
 					<section>
 						<h2>ICEC-Monitor</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Monitor</li>
 						</ul>
-						<p>Centro informatica ICEC</p>
-						<p><a href="https://monitor.education" target="_blank" rel="noopener noreferrer">https://monitor.education</a></p>
+						<div class="fragment">
+							<p>Centro informatica ICEC</p>
+							<p><a href="https://monitor.education" target="_blank" rel="noopener noreferrer">https://monitor.education</a></p>
+						</div>
 					</section>
 
 					<section>
 						<h2>Posta elettronica</h2>
-						<ul>
+						<ul class="fragment">
 							<li>Posta elettronica (via web o client)</li>
 						</ul>
-						<p>Centro informatica ICEC</p>
-						<p><a href="https://webmail.icec.ti-edu.ch" target="_blank" rel="noopener noreferrer">https://webmail.icec.ti-edu.ch</a></p>
+						<div class="fragment">
+							<p>Centro informatica ICEC</p>
+							<p><a href="https://webmail.icec.ti-edu.ch" target="_blank" rel="noopener noreferrer">https://webmail.icec.ti-edu.ch</a></p>
+						</div>
 					</section>
 
 					<section>
 						<h2>moodle/scc</h2>
 						<ul>
-							<li>Piattaforma Moodle</li>
-					
-						<p>SCC (team rdd)</p>
-						<p><a href="https://moodle.edu.ti.ch/scc" target="_blank" rel="noopener noreferrer">https://moodle.edu.ti.ch/scc</a></p>
+							<li class="fragment">Piattaforma Moodle</li>
+						</ul>
+						<div class="fragment">
+							<p>SCC (team rdd)</p>
+							<p><a href="https://moodle.edu.ti.ch/scc" target="_blank" rel="noopener noreferrer">https://moodle.edu.ti.ch/scc</a></p>
+						</div>
 					</section>
 
 					<section>
 						<h2>NetworkID</h2>
 						<ul>
-							<li>Microsoft 365</li>
+							<li class="fragment">Microsoft 365</li>
 						</ul>
-						<p>CERDD</p>
-						<p><a href="https://servizi.edu.ti.ch" target="_blank" rel="noopener noreferrer">https://servizi.edu.ti.ch</a></p>
-						<p><a href="https://office.com" target="_blank" rel="noopener noreferrer">https://office.com</a></p>
+						<div class="fragment">
+							<p>CERDD</p>
+							<p><a href="https://servizi.edu.ti.ch" target="_blank" rel="noopener noreferrer">https://servizi.edu.ti.ch</a></p>
+							<p><a href="https://office.com" target="_blank" rel="noopener noreferrer">https://office.com</a></p>
+						</div>
 					</section>
 				</section>
 
 				<section data-visibility="uncounted" data-menu-title="Licenza d'uso">
 					<p>&copy <script>document.write(new Date().getFullYear())</script> Alan Leoni</p>
-					<img class="r-stretch" data-src="img/cc.png" alt="">
-					<p>Tranne che dove menzionato diversamente, questo lavoro è distribuito sotto licenza Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. <br>
-						Per avere una copia di questa licenza, visitare:<br>
-						<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>.</p>
+					<img class="r-stretch" data-src="img/lab1.1/by-nc-sa.png" alt="">
+					<p>Tranne che dove menzionato diversamente, questo lavoro è distribuito sotto licenza Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br>
+					Per avere una copia di questa licenza, visitare:<br>
+					<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>.</p>
+					</section>
+
+				<section data-visibility="uncounted" data-menu-title="Qr code">
+						<div class="r-stack">
+							<img data-src="img/lab1.1/qr.png" alt="" width="40%">
+						</div>	
+						<p><a href="https://alanleoni.github.io/scc-slide/lab1.1" target="_blank" rel="noopener noreferrer">Link alla presentazione</a></p>
 				</section>
 
 			</div>

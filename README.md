@@ -1,1 +1,2 @@
-Template SCC per reveal.js utilizzato per le slide di presentazione del materiale scolastico
+# README
+Questo repository contiene le slide di "Accoglienza digitale" utilizzabili durante il Laboratorio di prima di comunicazione presso la [Scuola cantonale di commercio](https://www.sccbellinzona.ch).
